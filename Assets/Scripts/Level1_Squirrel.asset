@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5b6358ee0772646a094f31078778f2, type: 3}
+  m_Name: Level1_Squirrel
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueID: 
+  lines:
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "Hafif bir ba\u015Flang\u0131\xE7... Ya da \xF6yle g\xF6r\xFCn\xFCyor."
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "\u015Euna bak... K\xFC\xE7\xFCk, sevimli bir <color=#E74C3C>Sincap</color>.
+      Ama g\xF6zlerine dikkat et Gezgin. O par\u0131lt\u0131 a\xE7l\u0131ktan de\u011Fil,
+      <color=#E74C3C>delilikten</color>."
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "Sadece bir palamut pe\u015Finde ko\u015Fmuyor art\u0131k. O, <color=#E74C3C>parma\u011F\u0131n\u0131
+      koparmak</color> i\xE7in f\u0131rsat kolluyor."
+  - name: Sipnac
+    characterIcon: {fileID: -2335246373203730082, guid: f416c121ca7a1724dad2222e2608d9da, type: 3}
+    text: "F\u0131nd\u0131k? Sen f\u0131nd\u0131k m\u0131s\u0131n? Hay\u0131r...
+      Sen fazla b\xFCy\xFCks\xFCn. Ama parmaklar\u0131n... <color=#E74C3C>Evet, onlar
+      k\xFC\xE7\xFCk sosisler gibi!</color> K\u0131t\u0131rt diye ses \xE7\u0131kar\u0131yorlar
+      m\u0131? Deneyelim!"

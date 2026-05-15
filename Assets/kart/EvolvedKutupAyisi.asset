@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf727c9fd5e7974aa1fabec28aa37b6, type: 3}
+  m_Name: EvolvedKutupAyisi
+  m_EditorClassIdentifier: 
+  cardName: "\xC7\xF6ldeki Kutup Ay\u0131s\u0131"
+  description: 
+  artwork: {fileID: 8377895971564688389, guid: e83ef139a653ac44da8f6f672d79c921, type: 3}
+  value: 25
+  manaCost: 0
+  cardType: 0

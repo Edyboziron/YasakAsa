@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5b6358ee0772646a094f31078778f2, type: 3}
+  m_Name: Level5_Final
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueID: 
+  lines:
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "Yolun sonuna yakla\u015F\u0131yorsun. Buras\u0131 <color=#E74C3C>Orman\u0131n
+      Kalbi</color>... Ya da art\u0131k atmayan o kara delik."
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "Kar\u015F\u0131ndaki art\u0131k sadece bir hayvan de\u011Fil, \xF6l\xFCm\xFCn
+      y\xFCr\xFCyen hali. \u015Eu <color=#E74C3C>Ay\u0131n\u0131n</color> derisine
+      bak... \xD6l\xFCm bile onu durduramam\u0131\u015F."
+  - name: "\xC7\xF6ldeki Kutup Ay\u0131s\u0131"
+    characterIcon: {fileID: -4894206150948028936, guid: b178be43159374a4f93105c0bc4f54b3, type: 3}
+    text: "Toprak beni kustu... \xD6l\xFCm bile tad\u0131m\u0131 be\u011Fenmedi.
+      Sen mi beni durduracaks\u0131n? <color=#E74C3C>Nefesini bo\u015Fa harcama Gezgin.</color>
+      Kemiklerinin \xE7at\u0131rt\u0131s\u0131, bu sessiz ormana s\xF6yleyece\u011Fim
+      son ninni olacak."

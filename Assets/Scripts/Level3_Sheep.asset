@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5b6358ee0772646a094f31078778f2, type: 3}
+  m_Name: Level3_Sheep
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueID: 
+  lines:
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "G\xF6rd\xFCklerin ho\u015Funa gitmeyebilir. <color=#E74C3C>Lanet</color>
+      art\u0131k sadece zihinleri de\u011Fil, bedenleri de kemiriyor."
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "Bunlar... ya\u015Fam\u0131yor. Etleri kemiklerinden ayr\u0131lm\u0131\u015F
+      ama hala ayaktalar."
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "Ac\u0131 hissetmeyen bir d\xFC\u015Fmanla nas\u0131l sava\u015F\u0131rs\u0131n?
+      O <color=#E74C3C>Ko\xE7un</color> boynuzlar\u0131 art\u0131k sadece kemik k\u0131rmak
+      i\xE7in var. Merhamet bekleme."
+  - name: MEEE
+    characterIcon: {fileID: -7852671303844357213, guid: f35ef4813a8f1554ab32c650692348a8, type: 3}
+    text: "Meeee... Beni say\u0131p uyuyaca\u011F\u0131n\u0131 m\u0131 sand\u0131n?
+      Bir... \u0130ki... <color=#E74C3C>\xDC\xE7 ve \xD6L\xDCM!</color> Y\xFCn\xFCm
+      d\xF6k\xFClm\xFC\u015F olabilir ama kafam hala sert. Hadi toku\u015Ftural\u0131m,
+      bakal\u0131m \xF6nce kimin kafas\u0131 \xE7atlayacak?"

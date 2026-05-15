@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5b6358ee0772646a094f31078778f2, type: 3}
+  m_Name: Intro_Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  dialogueID: 
+  lines:
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "Masama ho\u015F geldin, <color=#FFD700>Gezgin</color>... <color=#FFD700>Kartlar\u0131n</color>
+      kaderi f\u0131s\u0131ldad\u0131\u011F\u0131 yere."
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "D\u0131\u015Far\u0131daki orman\u0131 biliyorsun, de\u011Fil mi? Bir zamanlar
+      huzur doluydu. Ama \u015Fimdi... Topra\u011F\u0131n alt\u0131nda bir \u015Feyler
+      uyand\u0131. <color=#E74C3C>Masumiyet \xE7\xFCr\xFCd\xFC.</color>"
+  - name: "Anlat\u0131c\u0131"
+    characterIcon: {fileID: 5739202372172849169, guid: a35062c9a8892e24baacf48705ae1514, type: 3}
+    text: "Bu lanetli ormanda ne kadar ilerleyebileceksin g\xF6relim. <color=#FFD700>Kartlar\u0131n\u0131</color>
+      se\xE7, \xE7\xFCnk\xFC onlar senin tek silah\u0131n."
