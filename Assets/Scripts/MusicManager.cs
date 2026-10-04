@@ -8,8 +8,8 @@ public class MusicManager : MonoBehaviour
     public AudioSource normalMusicSource;
     public AudioSource glitchMusicSource;
 
-    [Header("Ayarlar")]
-    public float fadeSpeed = 0.5f; // Geçiþ hýzý
+    [Header("Settings")]
+    public float fadeSpeed = 0.5f; // Transition speed
     private float targetNormalVolume = 1f;
     private float targetGlitchVolume = 0f;
 
@@ -20,7 +20,7 @@ public class MusicManager : MonoBehaviour
 
     void Start()
     {
-        // Baþlangýçta normal müzik çalsýn, diðeri sessiz olsun
+        // Start with normal music playing and glitched track muted
         normalMusicSource.volume = 1f;
         glitchMusicSource.volume = 0f;
 
@@ -30,12 +30,12 @@ public class MusicManager : MonoBehaviour
 
     void Update()
     {
-        // Ses seviyelerini hedef deðerlere doðru yumuþakça kaydýr (Fade Effect)
+        // Smoothly fade audio levels towards target volumes
         normalMusicSource.volume = Mathf.MoveTowards(normalMusicSource.volume, targetNormalVolume, fadeSpeed * Time.deltaTime);
         glitchMusicSource.volume = Mathf.MoveTowards(glitchMusicSource.volume, targetGlitchVolume, fadeSpeed * Time.deltaTime);
     }
 
-    // PlayerStats üzerinden bu fonksiyon çaðrýlacak
+    // Called by PlayerStats when stability drops below threshold or recovers
     public void SwitchMusic(bool isGlitched)
     {
         if (isGlitched)

@@ -5,25 +5,25 @@ using TMPro;
 
 public class PlayerStats : MonoBehaviour
 {
-    [Header("Ýstatistikler")]
+    [Header("Statistics")]
     public int health = 100;
     public int stability = 100;
     public int armor = 0;
 
-    [Header("UI Metinleri")]
+    [Header("UI Texts")]
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI stabilityText;
 
-    [Header("Görsel Ayarlar")]
+    [Header("Visual Settings")]
     public Image targetZoneImage;
-    public Sprite normalSprite;          // Stabilite > 50
-    public Sprite stabilityGlitchSprite; // Stabilite < 50
-    public Sprite damagedSprite;         // Vuruþ aný (Anlýk)
+    public Sprite normalSprite;          // Stability >= 50
+    public Sprite stabilityGlitchSprite; // Stability < 50
+    public Sprite damagedSprite;         // Hit impact sprite
     public float effectDuration = 0.3f;
 
     private Vector3 originalStabilityPos;
     private bool wasGlitched = false;
-    private bool isEffectActive = false; // Parlama (Kýrmýzý/Yeþil) varken Sprite güncellemeyi durdurur
+    private bool isEffectActive = false; // Pauses base sprite updates during damage/heal flashes
 
     void Start()
     {
@@ -39,16 +39,15 @@ public class PlayerStats : MonoBehaviour
 
     void Update()
     {
-        // Deðerleri sýnýrla
         stability = Mathf.Clamp(stability, 0, 100);
 
-        // 1. Yazý sallanmasý ve renk kontrolü (Her zaman çalýþmalý)
+        // 1. Text shake and color checks
         UpdateUI();
 
-        // 2. Müzik geçiþ kontrolü (Her zaman çalýþmalý)
+        // 2. Music corruption transition check
         CheckMusicTransition();
 
-        // 3. Karakter resmi kontrolü (Eðer bir parlama efekti yoksa çalýþmalý)
+        // 3. Player base portrait update (unless flashing)
         if (!isEffectActive)
         {
             UpdatePlayerBaseImage();
@@ -59,7 +58,6 @@ public class PlayerStats : MonoBehaviour
     {
         if (targetZoneImage == null) return;
 
-        // Stabiliteye göre taban resmi belirle
         if (stability < 50 && stabilityGlitchSprite != null)
             targetZoneImage.sprite = stabilityGlitchSprite;
         else if (normalSprite != null)
@@ -73,19 +71,18 @@ public class PlayerStats : MonoBehaviour
 
         if (stabilityText != null)
         {
-            stabilityText.text = "STABÝLÝTE: %" + stability;
+            stabilityText.text = "STABILITE: %" + stability;
 
-            // KRÝTÝK DÜZELTME: Hem renk hem sallanma ayný if içinde
             if (stability < 50)
             {
-                stabilityText.color = Color.red; // YAZI KIRMIZI OLUR
+                stabilityText.color = Color.red;
                 float s = (50 - stability) * 0.2f;
                 stabilityText.rectTransform.localPosition = originalStabilityPos +
                     new Vector3(Random.Range(-s, s), Random.Range(-s, s), 0);
             }
             else
             {
-                stabilityText.color = Color.white; // YAZI BEYAZ OLUR
+                stabilityText.color = Color.white;
                 stabilityText.rectTransform.localPosition = originalStabilityPos;
             }
         }
@@ -95,17 +92,16 @@ public class PlayerStats : MonoBehaviour
     {
         if (MusicManager.Instance == null) return;
 
-        // MÜZÝK GEÇÝÞÝ: wasGlitched kontrolü ile sadece bir kez tetiklenir
         if (stability < 50 && !wasGlitched)
         {
             wasGlitched = true;
-            Debug.Log("Müzik Bozuluyor...");
+            Debug.Log("MÃ¼zik Bozuluyor...");
             MusicManager.Instance.SwitchMusic(true);
         }
         else if (stability >= 50 && wasGlitched)
         {
             wasGlitched = false;
-            Debug.Log("Müzik Düzeliyor...");
+            Debug.Log("MÃ¼zik DÃ¼zeliyor...");
             MusicManager.Instance.SwitchMusic(false);
         }
     }
@@ -145,7 +141,6 @@ public class PlayerStats : MonoBehaviour
         targetZoneImage.color = Color.white;
         isEffectActive = false;
 
-        // Efekt bitince resmi hemen o anki stabiliteye göre güncelle
         UpdatePlayerBaseImage();
     }
 
