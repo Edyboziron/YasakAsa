@@ -116,6 +116,6 @@ YasakAsa/
 Developed for **Sandwich Jam 2** by:
 
 - **Enes Bozdemir** ([@Edyboziron](https://github.com/Edyboziron))
-- **Eray Çocuk**
+- **Eray Çocuk** ([@Er4y33](https://github.com/Er4y33))
 
 *Special thanks to the Sandwich Jam community for hosting the event!*
